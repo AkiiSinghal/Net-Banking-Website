@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Singhal Bank</title>
+  <link rel="icon" href="../img/l.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/response.css">
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <img src="../img/lg.png" height="44" width="204.8">
+  <a href="../index.html" class="active"><i class="fa fa-fw fa-home "></i>Home</a>
+  <a href="../register/register.php" style="float: right"><i class="fa fa-fw fa-sign-in "></i>Sign Up</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br><br>
+  <center>
+    <div style="background-color: #4CAF50; height: 45px; width: 100%; align-items: center; color: white; "><h1>Login</h1></div>
+  <br>
+    <div><p style="color: red">Wrong email or password. Please try again!</p></div>
+    <hr class="colorgraph">
+  <form action="../db/login.php" method="post">
+    <table cellspacing="25">
+      <col width="80%">
+      <tr>
+        <td>
+          <input type="text" name="id" class="question" id="id" required autocomplete="off" />
+          <label for="id"><span>User ID</span></label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="password" name="password" class="question" id="password" required autocomplete="off" />
+          <label for="password"><span>Password</span></label>
+        </td>
+      </tr>
+      <tr>
+        <td><a style="color: blue" onmouseover="this.style.color = 'red'" onmouseleave="this.style.color = 'blue'" href="../register/register.php">New User?</a></td>
+      </tr>
+    </table>
+    <hr class="colorgraph">
+    <br>
+    <input type="submit" name="submit" value="Submit" style="height: 45px; width: 200px; font-size: 25px; color: white; background-color: #4CAF50">
+  </form>
+  </center>
+</body>
+</html>

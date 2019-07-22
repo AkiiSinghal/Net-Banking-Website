@@ -1,0 +1,110 @@
+input,
+span,
+label,
+select {
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 28px;
+}
+
+select:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+select.question {
+  font-size: 28px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+/* Underline and Placeholder */
+
+input.question + label,
+select.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  border-top: 1px solid red;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+select.question:focus + label {
+  width: 90%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+select.question:valid,
+select.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -58px;
+  font-size: 13px;
+  color: #333;
+}
+
+select.question:focus + label > span,
+select.question:valid + label > span {
+  top: -58px;
+  font-size: 13px;
+  color: #333;
+}
+
+input.question:valid + label,
+select.question:valid + label {
+  border-color: green;
+}
+
+input.question:invalid,
+select.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+select.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8F8F8F;
+  font-size: 28px;
+  top: -38px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
