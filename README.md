@@ -37,6 +37,7 @@ Some useful links to help in proper setup :
   * **/Net-Banking-Website/img :** Contains various images and icon vectors used as resources in the website
 
 ## Screenshots
+.[](https://drive.google.com/open?id=16a__2m47nRvG4bFmMBywSJUSnS9IEPWE)
 
 ## Author
 * [AkiiSinghal](https://github.com/AkiiSinghal)
